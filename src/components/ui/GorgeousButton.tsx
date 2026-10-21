@@ -13,6 +13,7 @@ interface GorgeousButtonProps {
   variant?: "primary" | "secondary" | "dark" | "outline";
   size?: "sm" | "md" | "lg";
   icon?: React.ReactNode;
+  showIcon?: boolean;
   showShimmer?: boolean;
   showPulseDot?: boolean;
   confettiOnClick?: boolean;
@@ -29,6 +30,7 @@ export function GorgeousButton({
   variant = "primary",
   size = "md",
   icon,
+  showIcon = true,
   showShimmer = true,
   showPulseDot = false,
   confettiOnClick = false,
@@ -109,12 +111,14 @@ export function GorgeousButton({
       </span>
 
       {/* Icon with Hover Slide */}
-      {icon ? (
-        <span className="relative z-10 transition-transform duration-200 group-hover:translate-x-1">
-          {icon}
-        </span>
-      ) : (
-        <ArrowRight className="relative z-10 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+      {showIcon && icon !== null && (
+        icon ? (
+          <span className="relative z-10 transition-transform duration-200 group-hover:translate-x-1">
+            {icon}
+          </span>
+        ) : (
+          <ArrowRight className="relative z-10 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+        )
       )}
     </motion.span>
   );

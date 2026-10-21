@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, lazy, useState, useEffect } from "react";
-import { BadgeCheck, ArrowRight, Zap, Star } from "lucide-react";
+import { BadgeCheck, Star } from "lucide-react";
 import { motion } from "framer-motion";
 import type { siteSettings } from "@/db/schema";
 import { HeroVisuals } from "@/components/animations/HeroVisuals";
@@ -166,7 +166,7 @@ export function Hero({ settings }: { settings: Settings }) {
                 href="#services"
                 variant="secondary"
                 size="lg"
-                icon={<Zap className="h-4 w-4 text-[#006402]" />}
+                showIcon={false}
                 className="w-full sm:w-[270px] px-4 sm:px-6 justify-center text-center whitespace-nowrap"
                 wrapperClassName="w-full sm:w-auto"
               >
