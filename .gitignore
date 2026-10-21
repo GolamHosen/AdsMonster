@@ -22,6 +22,7 @@
 .nyc_output
 
 # Environment variables & secrets
+.env.example
 .env
 .env*.local
 .env.development.local
