@@ -36,6 +36,10 @@ local.db
 *.db-wal
 *.db-shm
 
+# Drizzle migrations
+/drizzle/
+drizzle/
+
 # Debug & runtime logs
 logs
 *.log
