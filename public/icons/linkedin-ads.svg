@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <!-- LinkedIn Blue Circle -->
+  <circle cx="60" cy="60" r="58" fill="#0A66C2"/>
+  <!-- Crisp white LinkedIn 'in' logo -->
+  <g fill="#FFFFFF">
+    <circle cx="43" cy="41" r="6"/>
+    <rect x="37" y="52" width="12" height="36" rx="2"/>
+    <path d="M57 52h11.5v5h.2c1.6-3 5.6-6.2 11.5-6.2 12.3 0 14.6 8.1 14.6 18.6V88H82.5V71.2c0-4-.1-9.2-5.6-9.2-5.6 0-6.5 4.4-6.5 8.9V88H57V52z"/>
+  </g>
+</svg>

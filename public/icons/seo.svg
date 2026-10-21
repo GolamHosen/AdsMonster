@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <!-- SEO Dark Emerald Badge -->
+  <circle cx="60" cy="60" r="58" fill="#104042"/>
+  <circle cx="60" cy="60" r="54" stroke="#AEFF1C" stroke-width="2" stroke-dasharray="4 2" fill="none"/>
+  <!-- Magnifying glass / search circle -->
+  <circle cx="50" cy="50" r="16" stroke="#AEFF1C" stroke-width="5" fill="none"/>
+  <line x1="62" y1="62" x2="80" y2="80" stroke="#AEFF1C" stroke-width="5" stroke-linecap="round"/>
+  <!-- Rising trend line / analytics chart -->
+  <path d="M40 56l7-9 6 5 9-11" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="57,41 62,41 62,46" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

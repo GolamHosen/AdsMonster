@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  /* AdsMonster brand palette */
+  --color-brand-dark: #104042;
+  --color-brand-darker: #0c3234;
+  --color-brand-lime: #AEFF1C;
+  --color-brand-lime-hover: #c4ff5c;
+  --color-brand-green-deep: #006402;
+  --color-brand-mint: #E8F4F4;
+  --color-brand-sage: #A9C7C7;
+  --color-brand-body: #5E5E5E;
+  --color-brand-heading: #104042;
+  --color-brand-card-border: rgba(16, 64, 66, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  color: var(--color-brand-body);
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Radio Canada Big', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background-color: #AEFF1C;
+  color: #104042;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #104042;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a5c5e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AEFF1C;
+}
+
+/* Ambient glow & glassmorphism utilities */
+.glass-panel {
+  background: rgba(232, 244, 244, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 64, 66, 0.1);
+}
+
+.glass-dark {
+  background: rgba(16, 64, 66, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(174, 255, 28, 0.1);
+}
+
+.text-gradient-lime {
+  background: linear-gradient(135deg, #AEFF1C 0%, #006402 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Primary CTA button styling: Simple, luxury emerald, high clickability */
+.btn-brand {
+  background: #006402;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px -5px rgba(0, 100, 2, 0.45);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-brand:hover {
+  box-shadow: 0 16px 36px -4px rgba(0, 100, 2, 0.65);
+  transform: translateY(-2px) scale(1.02);
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+/* Dot matrix pattern for service sections */
+.dot-pattern {
+  background-image: radial-gradient(circle, rgba(16, 64, 66, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* World map dot overlay for CTA sections */
+.map-dots {
+  background-image: radial-gradient(circle, rgba(174, 255, 28, 0.12) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+/* Reduced motion: disable custom animations for a11y */
+@media (prefers-reduced-motion: reduce) {
+  .animate-ping,
+  .animate-pulse,
+  .animate-pulse-slow,
+  .animate-float {
+    animation: none !important;
+  }
+}
+
+/* 3D canvas container pointer passthrough for overlaid UI */
+canvas {
+  touch-action: none;
+}

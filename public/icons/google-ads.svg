@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <!-- Circular container background -->
+  <circle cx="60" cy="60" r="58" fill="#FFFFFF"/>
+  <circle cx="60" cy="60" r="56" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+  <!-- Google Ads Official Logo Shapes -->
+  <!-- Yellow dot -->
+  <circle cx="43" cy="77" r="13" fill="#FBBC04"/>
+  <!-- Blue capsule (slanted -60deg) -->
+  <rect x="52" y="30" width="22" height="52" rx="11" transform="rotate(35 52 30)" fill="#4285F4"/>
+  <!-- Green capsule (slanted +60deg) -->
+  <rect x="42" y="78" width="22" height="46" rx="11" transform="rotate(-35 42 78)" fill="#34A853"/>
+</svg>

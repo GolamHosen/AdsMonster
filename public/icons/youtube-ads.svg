@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <!-- YouTube Red Background Circle -->
+  <circle cx="60" cy="60" r="58" fill="#FF0000"/>
+  <!-- YouTube Rounded Rectangle & Play Button -->
+  <rect x="30" y="38" width="60" height="44" rx="14" fill="#FFFFFF"/>
+  <polygon points="54,48 54,72 74,60" fill="#FF0000"/>
+</svg>
